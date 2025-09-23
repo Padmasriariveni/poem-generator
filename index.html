@@ -1,25 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Poem Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1 class="title">Poem Generator</h1>
-    <div class="input-group">
-      <input type="text" id="word1" placeholder="First Word">
-      <input type="text" id="word2" placeholder="Second Word">
-      <input type="text" id="word3" placeholder="Third Word">
+    <h1>Poem Generator</h1>
+
+    <div class="inputs">
+      <input id="word1" placeholder="Word 1 (e.g. apple)" />
+      <input id="word2" placeholder="Word 2 (e.g. banana)" />
+      <input id="word3" placeholder="Word 3 (e.g. mango)" />
+      <button id="generateBtn" type="button">Generate</button>
     </div>
-    <button id="generateBtn" class="btn">Generate Poem</button>
-    <p id="poemOutput" class="poem"></p>
+
+    <div id="poemOutput" class="poem-output" aria-live="polite"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
-
 
